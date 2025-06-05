@@ -42,3 +42,17 @@
 .text-rpn-color{
     background-color: #00332b;
 }
+
+
+@media (max-width: 768px) {
+  .text-rpn{
+    padding: 0rem 0rem 0rem 0rem;
+}
+.typing-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  font-family: Georgia, serif;
+}
+}

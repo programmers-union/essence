@@ -11,7 +11,7 @@ import { InteriorShowcaseProps } from '../types/interior';
 import InteriorShowcase from '../components/InteriorShowcase';
 import SeeAllWorks from '@/components/SeeAllWorks';
 import AnimatedMessage from '@/components/AnimatedMessage';
-
+import StraightLine from '@/components/BorderBox';
 import ScrollRotateImages from '@/components/ScrollRotateImages';
 
 export default function Home() {
@@ -170,7 +170,8 @@ export default function Home() {
 
      
           {/* NAVIGATION BAR */}
-      <div className={styles.nav}>
+      <div className={styles.navbg}>
+        <div className={styles.nav}>
         <div className={styles.logoContainer}>
           <Image
             src="/logo.png"
@@ -236,6 +237,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </div>
+
+        <StraightLine />
+
+      
 
       
 
