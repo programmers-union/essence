@@ -253,8 +253,10 @@ export default function Home() {
 
       {/* MAIN HERO */}
       <div className={styles.container}>
-        <div className={styles.brand}>ESSENCE</div>
-      </div>
+      <div className={styles.brand}>ESSENCE</div>
+    </div>
+
+
       
 
       {/* DESIGN BLOCK #1 */}

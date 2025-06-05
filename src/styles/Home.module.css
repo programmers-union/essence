@@ -211,22 +211,29 @@
 
 /* -------------------- MAIN HERO -------------------- */
 .container {
-  width: 100%;
-  
+
+  height: 25vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
- padding: 0px 20px;
-  box-sizing: border-box;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   background-color: #4bd8b1;
+  box-sizing: border-box;
 }
+
 .brand {
   font-size: 200px;
   font-family: Georgia, serif;
   font-weight: bold;
   letter-spacing: 0.1rem;
   color: #06251c;
+  margin: 0;
+  padding: 0;
+  line-height: 1; /* Ensures no extra space vertically */
 }
+
+
 .brand2 {
   font-size: 90px;
   font-family: Georgia, serif;
@@ -250,6 +257,7 @@
   font-weight: bold;
   color: #06251c;
   position: relative;
+  background-color: #4bd8b1;
 }
 .section3Header::before {
   content: "\00ae";
@@ -271,6 +279,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  background-color: #4bd8b1;
  
   padding: 2rem;
   flex-direction: column;
@@ -288,7 +297,7 @@
 }
 .section3Text {
   position: absolute;
-  top: -10%;
+  top: -4%;
   right: 0%;
   background-color: #4bd8b1;
   padding: 3rem;
