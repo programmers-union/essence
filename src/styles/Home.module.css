@@ -292,6 +292,7 @@
   right: 0%;
   background-color: #4bd8b1;
   padding: 3rem;
+  color: black;
   
 }
 .section3Text p {
@@ -1020,7 +1021,7 @@
 @media (min-width: 768px) {
   .container8 {
     flex-direction: row;
-    justify-content: space-between;
+    
     padding: 0 5rem;
   }
 }
@@ -1053,9 +1054,46 @@
 }
 
 .textContent {
-  max-width: 700px;
-  text-align: left;
+  max-width: 875px;
+  
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  animation: fadeIn 0.5s ease-in-out;
 }
+.hishop{
+  display: flex;
+  padding: 0rem 12rem;
+}
+.hisimage img{
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.blackText {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-family: Georgia, serif;
+  font-weight: 600;
+}
+
+.goldText {
+  color: #e8ce83;
+   font-size: 3rem; 
+   font-family: Georgia, serif;
+}
+
+
 
 .testimonialText {
   font-size: 2rem;
@@ -1065,21 +1103,23 @@
 }
 
 .author {
-  font-size: 1.25rem;
+  font-size:1.9rem;
   font-weight: 600;
   margin-top: 1rem;
+  font-family: Georgia, serif;
 }
 
 .role {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   color: #cccccc;
+  font-family: Georgia, serif;
 }
 
 .counter {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  font-size: 0.875rem;
+  font-size: 1.5rem;
 }
 
 .bold {

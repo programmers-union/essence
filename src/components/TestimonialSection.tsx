@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 
 type Testimonial = {
@@ -14,7 +14,7 @@ const testimonials: Testimonial[] = [
     name: "Emily Johnson",
     role: "Product Designer at Intro.Space",
     content:
-      "Excellent with the work done. Their team not only understood our vision but also brought it to life in a way that exceeded our expectations. The space is functional.",
+      "Excellent with the vision but also brought it to life in a way that exceeded our expectations. The space is functional.",
     image: "/image2.webp",
   },
   {
@@ -35,11 +35,43 @@ const testimonials: Testimonial[] = [
 
 export default function TestimonialSection() {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  // Auto-slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 5000); // 5 seconds
+
+    return () => clearInterval(interval); // Cleanup
+  }, []);
+
   const testimonial = testimonials[activeIndex];
 
   return (
     <section className={styles.testimonialSection}>
+
       <div className={styles.container8}>
+        <div className={styles.hishop}  >
+          <div className={styles.hisimage}>
+              <img src="/image2.png" alt="" />
+          </div>
+
+          <div className={styles.counter}>
+          <span className={styles.bold}>
+            {String(activeIndex + 1).padStart(2, "0")} -
+          </span>{" "}
+          {String(testimonials.length).padStart(2, "0")}
+        </div>
+
+        </div>
+      </div>
+       
+
+
+       <div className={styles.container8}>
+
+       
+
         <div className={styles.imageColumn}>
           {testimonials.map((t, index) => (
             <button
@@ -61,17 +93,25 @@ export default function TestimonialSection() {
         </div>
 
         <div className={styles.textContent}>
-          <div className={styles.testimonialText}>{testimonial.content}</div>
+         <div className={styles.testimonialText}>
+          {(() => {
+            const words = testimonial.content.split(" ");
+            const splitIndex = Math.floor(words.length * 0.8);
+            const firstPart = words.slice(0, splitIndex).join(" ");
+            const lastPart = words.slice(splitIndex).join(" ");
+            return (
+              <>
+                <span className={styles.blackText}>{firstPart} </span>
+                <span className={styles.goldText}>{lastPart}</span>
+              </>
+            );
+          })()}
+        </div>
           <div className={styles.author}>{testimonial.name}</div>
           <div className={styles.role}>{testimonial.role}</div>
         </div>
 
-        <div className={styles.counter}>
-          <span className={styles.bold}>
-            {String(activeIndex + 1).padStart(2, "0")} -
-          </span>{" "}
-          {String(testimonials.length).padStart(2, "0")}
-        </div>
+        
 
         <div className={styles.brand3}>
           Intro.<span>Space</span>
