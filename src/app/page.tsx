@@ -289,6 +289,7 @@ export default function Home() {
                   <br />
                   AND EXTERIOR CREATIONS.
                 </p>
+                <p className={styles.fig}>INTRO.STUDIO</p>
               </div>
             </div>
             <div className={styles.brand2}>
