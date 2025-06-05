@@ -1882,26 +1882,26 @@
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   .ferroLogoSection {
-    background-color: #1a1a1a;
+    background-color: #f3f2ed;
   }
   
   .ferroLogo {
-    color: #4a9999;
+    color: #f3f2ed;
   }
 }
 
 /* High contrast mode */
 @media (prefers-contrast: high) {
   .ferroContentSection {
-    background-color: #000000;
+    background-color: #f3f2ed;
   }
   
   .ferroTitle, .ferroSubtitle, .ferroDetailLabel, .ferroDetailValue {
-    color: #ffffff;
+    color: #f3f2ed;
   }
   
   .ferroDivider {
-    background-color: #ffffff;
+    background-color: #f3f2ed;
   }
 }
 
