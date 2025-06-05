@@ -1,0 +1,44 @@
+.animation-container {
+  background-color: #00332b;
+  color: white;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+}
+
+.typing-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  font-family: Georgia, serif;
+}
+.line-one {
+  color: #ffffff; /* Mint green or any color you like */
+}
+
+.line-two {
+  color: #e8ce83; /* Pink or any contrasting color */
+}
+.line-three{
+     color: #ffffff;
+}
+.line-four{
+      color: #e8ce83;
+}
+.text-rpn{
+    padding: 0rem 0rem 0rem 40rem;
+}
+.text-rpn-color{
+    background-color: #00332b;
+}

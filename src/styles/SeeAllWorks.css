@@ -1,0 +1,40 @@
+.see-all-container {
+
+  align-items: center;
+  gap: 20px;
+  padding: 100px 20px;
+  background-color: #f4f3ee;
+  position: relative;
+  flex-wrap: wrap;
+}
+.see-all-container2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f3ee;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.see-all-text {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0d2c24;
+  line-height: 1;
+}
+
+.see-all-arrow {
+  object-fit: contain;
+  transition: transform 1.5s cubic-bezier(0.23, 1, 0.32, 1);    
+}
+
+.see-all-line {
+  width: 25%;
+  height: 2px;
+  background-color: #0d2c24;
+  margin-top: 10px;
+}
+.see-all-container:hover .see-all-arrow {
+  transform: rotate(45deg); /* From ↗ to ↓ */
+}
