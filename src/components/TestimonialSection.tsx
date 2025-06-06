@@ -50,7 +50,7 @@ export default function TestimonialSection() {
   return (
     <section className={styles.testimonialSection}>
 
-      <div className={styles.container8}>
+      <div className={styles.container10}>
         <div className={styles.hishop}  >
           <div className={styles.hisimage}>
               <img src="/image2.png" alt="" />
@@ -114,7 +114,7 @@ export default function TestimonialSection() {
         
 
         <div className={styles.brand3}>
-          Intro.<span>Space</span>
+          <img src="/image5.png" alt="" />
         </div>
       </div>
     </section>

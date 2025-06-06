@@ -186,7 +186,7 @@ export default function Home() {
             Home
           </a>
           <a href="#" className={styles.navItem}>
-            About
+            About us
           </a>
           <a href="#" className={styles.navItem}>
             Services
@@ -198,7 +198,16 @@ export default function Home() {
             Shop
           </a>
           <a href="#" className={styles.navItem}>
+            Portfolio
+          </a>
+          <a href="#" className={styles.navItem}>
+            Pages
+          </a>
+          <a href="#" className={styles.navItem}>
             Blog
+          </a>
+          <a href="#" className={styles.navItem}>
+            Contact
           </a>
         </div>
         <div className={styles.rightControls}>
