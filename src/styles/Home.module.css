@@ -1657,7 +1657,7 @@
 @media (max-width: 768px) {
   .ferroContainer {
     flex-direction: column;
-    height: auto;
+    min-height: 75vh;
   }
   
   .ferroCompact {
@@ -1676,6 +1676,13 @@
     min-height: 400px;
     order: 1;
   }
+  .section5Highlighttwo {
+  color: rgb(6, 37, 28);
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 5px 0px;
+}
   
   .ferroCompact .ferroRightPanel {
     height: 35vh;
@@ -1684,6 +1691,7 @@
   
   .ferroLogoSection {
     padding: 30px 25px 20px;
+    display: none;
   }
   
   .ferroCompact .ferroLogoSection {
@@ -1700,6 +1708,7 @@
   
   .ferroContentSection {
     padding: 30px 25px 40px;
+    margin: 0rem 0rem 0rem 0rem;
   }
   
   .ferroCompact .ferroContentSection {
@@ -1739,6 +1748,17 @@
   .ferroCompact .ferroDetailsGrid {
     gap: 15px;
   }
+
+  .brand3 {
+
+  display: none;
+}
+.brand3 img{
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+ 
+}
 }
 
 @media (max-width: 480px) {
@@ -1910,7 +1930,7 @@
         font-size: 14px;
   }
   .popup{
-    width: 95%;
+    width: 100%;
   }
   .popupContent p{
     padding: 1.2rem 0rem;
@@ -1919,8 +1939,9 @@
    
   }
   .popupContent{
-    padding-top: 7rem;
+   
     text-align: left;
+    padding: 6rem 10rem;
   }
   .brand {
     font-size: 4rem;
@@ -1929,7 +1950,7 @@
     font-size: 48px;
     padding: 0px 15px 0px 20px;
     font-weight: 800;
-    top: -14.33rem;
+    top: -10.33rem;
   }
   .section3Header::before {
     top: -10px;
@@ -1946,6 +1967,7 @@
     background-color: #4bd8b1;
     margin-top: 1rem;
     text-align: center;
+    padding: 0rem 1rem;
   }
   .section3Text p {
     font-size: 0.8rem;
@@ -2049,20 +2071,20 @@
   background-color: #4bd8b1;
   padding: 0;
   position: relative;
-  top: -12rem;
+  top: -10rem;
   z-index: 1;
   max-width: 50rem;
 }
  .brand {
     font-size: 3rem;
-    padding-right: 9.5rem;
+    padding-right: 5.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .brand {
     font-size: 3rem;
-    padding-right: 9.5rem;
+    padding-right: 5.5rem;
   }
   .gridContainer {
     grid-template-columns: repeat(1, 1fr);
