@@ -304,7 +304,7 @@
   position: relative;
   width: 100%;
   max-width: 46rem;
-  top: -6rem;
+  top: 0rem;
  
 }
 .section3ImageBox img {
@@ -1250,6 +1250,13 @@
     font-size: clamp(3rem, 12vw, 6rem);
     margin-bottom: 40px;
   }
+  .section3ImageBox {
+  position: relative;
+  width: 100%;
+  max-width: 46rem;
+  top: -6rem;
+ 
+}
   
   .brosche-info-card {
     padding: 30px 20px;
